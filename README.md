@@ -1,1 +1,1 @@
-CV builder made with React
+Curriculum Vitae/Resume builder made with React
