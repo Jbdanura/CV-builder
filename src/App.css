@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(95, 95, 95);
+  font-size: 20px;
+  padding-bottom: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+.form-general-container *, .form-education-container *, .form-experience-container * {
+  display: block;
+
+}
+h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-container{
+  transform: translateX(20%);
+}
+
+.form-education-container{
+  margin: 50px 0;
+}
+.form-general-container{
+  margin: 50px 0; 
+}
+.form-container input{
+  width: 300px;
+  height: 40px;
+  border: none;
+  padding: 5px;
+}
+
+.form-container input:focus{
+  border: 1px solid black;
+  border-radius: 1px;
+
+}
+
+.form-general-container , .form-education-container , .form-experience-container{
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  padding: 35px;
+}
+
+hr{
+  margin-top: 10px;
+}
+
+.delete, .new{
+  padding: 13px;
+  margin-top: 5px;
   color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  transform: translateX(50%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-.App-link {
-  color: #61dafb;
+.delete{
+  background-color: rgb(255, 80, 80);
 }
+.new{
+  background-color: rgb(93, 207, 141);
+  transform: translateX(60%);
+}
+.cv-container{
+  display: flex;
+}
+.cv-right{
+  width: 600px;
+  margin-top: 45px;
+  background-color: white;
+  padding: 10px;
+  height: 100%;
+  min-height: 1000px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.cv-left{
+  background-color: grey;
+  height: 100%;
+  width: 300px;
+  margin-top: 45px;
+  min-height: 1000px;
+  padding: 10px;
+}
+img{
+  transform:translateX(15%);
+  margin-top: 50px;
 }
