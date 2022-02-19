@@ -117,7 +117,9 @@ export default class CV extends React.Component{
                         address={this.state.general[0].address} phone={this.state.general[0].phone} form={false}/>
                     </div>
                     <div className="cv-right">
+                        <h3 className="education-h">Education</h3>
                         {this.renderEducation(false)}
+                        <h3 className="experience-h">Experience</h3>
                         {this.renderExperience(false)}
                     </div>
                 </div>

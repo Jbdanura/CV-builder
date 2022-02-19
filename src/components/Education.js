@@ -28,11 +28,10 @@ export default class Education extends React.Component{
                 </div>
             } {!this.props.form &&
                 <div className="cv-education">
-
-                    <p>{this.props.degree}</p>
+                    <p className="title">{this.props.degree}</p>
                     <p>{this.props.institution}</p>
                     <p>{this.props.address}</p>
-                    <p>{this.props.from}</p> - <p>{this.props.to}</p>
+                    <p>{this.props.from} - {this.props.to}</p>
                 </div>
             }
             </div>

@@ -24,11 +24,12 @@ export default class General extends React.Component{
                 </div>
             } {!this.props.form &&
                 <div className="cv-general">
-                    <p>{this.props.name}</p>
-                    <p>{this.props.lastname}</p>
-                    <p>{this.props.description}</p>
-                    <p>{this.props.address}</p>
-                    <p>{this.props.phone}</p>
+                    <p className="name">{this.props.name}</p>
+                    <p className="lastname">{this.props.lastname}</p>
+                    <p className="description">{this.props.description}</p>
+                    <h4 className="contact-info" >Contact info</h4>
+                    <p className="address">{this.props.address}</p>
+                    <p className="phone">{this.props.phone}</p>
                 </div>
             }
             </div>

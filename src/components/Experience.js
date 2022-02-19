@@ -17,11 +17,11 @@ class Experience extends React.Component{
                 </div>
             } {!this.props.form &&
                 <div className="cv-experience">
-                    <p>{this.props.position}</p>
+                    <p className="title">{this.props.position}</p>
                     <p>{this.props.company}</p>
                     <p>{this.props.description}</p>
                     <p>{this.props.address}</p>
-                    <p>{this.props.from}</p> - <p>{this.props.to}</p>
+                    <p>{this.props.from} - {this.props.to}</p>
                 </div>
             }
             </div>
